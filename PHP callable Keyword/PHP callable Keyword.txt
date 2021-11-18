@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function printFormatted(callable $format, $str) {
+  echo $format($str);
+  echo "<br>";
+}
+
+function exclaim($str) { return $str . "!"; }
+printFormatted("exclaim", "Hello World");
+?>
+
+</body>
+</html>
+
+
+
+
+Hello World!
